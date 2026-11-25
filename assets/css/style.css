@@ -2145,3 +2145,39 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .filter-list { flex-wrap: wrap; row-gap: 10px; }
+
+/* profile photo avatar */
+
+.avatar-box { overflow: hidden; }
+
+.avatar-box img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  height: auto;
+}
+
+/* sidebar contacts collapse on every screen size (open on About, toggle elsewhere) */
+
+@media (min-width: 1250px) {
+
+  .info_more-btn {
+    display: block;
+    top: -60px;
+    right: -30px;
+  }
+
+  .sidebar.active { max-height: max-content; }
+
+  .sidebar:not(.active) .sidebar-info_more {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .sidebar .sidebar-info_more {
+    max-height: 600px;
+    transition: var(--transition-2);
+  }
+
+}

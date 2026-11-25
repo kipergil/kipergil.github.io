@@ -7,14 +7,21 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
 
-// sidebar toggle functionality for mobile
+// sidebar contacts: open on the About page, collapsed elsewhere, toggle button always works
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+const sidebarBtnText = document.querySelector("[data-sidebar-btn-text]");
+
+const setSidebarOpen = function (open) {
+  if (!sidebar) return;
+  sidebar.classList.toggle("active", open);
+  if (sidebarBtn) sidebarBtn.setAttribute("aria-expanded", open);
+  if (sidebarBtnText) sidebarBtnText.innerText = open ? "Hide Contacts" : "Show Contacts";
+}
 
 if (sidebar && sidebarBtn) {
   sidebarBtn.addEventListener("click", function () {
-    elementToggleFunc(sidebar);
-    sidebarBtn.setAttribute("aria-expanded", sidebar.classList.contains("active"));
+    setSidebarOpen(!sidebar.classList.contains("active"));
   });
 }
 
@@ -84,6 +91,7 @@ const showPage = function (name) {
   for (let i = 0; i < navigationLinks.length; i++) {
     navigationLinks[i].classList.toggle("active", navigationLinks[i].innerText.trim().toLowerCase() === name);
   }
+  if (found) setSidebarOpen(name === "about");
   return found;
 }
 
