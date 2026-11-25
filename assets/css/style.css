@@ -2267,3 +2267,35 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 }
+
+/* phone & tablet: menu as a sticky top bar instead of a bottom bar */
+
+@media (max-width: 1023px) {
+
+  .navbar {
+    top: 0;
+    bottom: auto;
+    border-radius: 0 0 16px 16px;
+    border-top: none;
+    background: hsla(240, 2%, 12%, 0.85);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  .navbar-link { padding-block: 18px; }
+
+  main {
+    margin-top: 72px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (min-width: 580px) and (max-width: 1023px) {
+
+  main {
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
+
+}
