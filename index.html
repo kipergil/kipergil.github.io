@@ -22,7 +22,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=6">
+  <link rel="stylesheet" href="./assets/css/style.css?v=9">
 
   <!--
     - google font link
@@ -44,12 +44,12 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar active" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Mustafa Kipergil" width="80">
+          <img src="./assets/images/my-avatar.jpg" alt="Mustafa Kipergil" width="80" height="80">
         </figure>
 
         <div class="info-content">
@@ -58,8 +58,8 @@
           <p class="title">Senior Software Architect</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <button class="info_more-btn" data-sidebar-btn aria-expanded="true" aria-label="Toggle contacts">
+          <span data-sidebar-btn-text>Hide Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -701,7 +701,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="turkish community">
-              <a href="https://turkish-events-uk.vercel.app" target="_blank" rel="noopener">
+              <a class="project-link" href="https://turkish-events-uk.vercel.app" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -719,10 +719,19 @@
                   community gatherings, refreshed every morning.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://turkish-events-uk.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open Turkish Events UK">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>turkish-events-uk.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://turkish-events-uk.vercel.app" aria-label="Copy link to Turkish Events UK" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="turkish community">
-              <a href="https://turkish-health-network-uk-topaz.vercel.app" target="_blank" rel="noopener">
+              <a class="project-link" href="https://turkish-health-network-uk-topaz.vercel.app" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -740,6 +749,45 @@
                   pharmacies, searchable by NHS / private and location.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://turkish-health-network-uk-topaz.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open Turkish Health Network UK">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>turkish-health-network-uk-topaz.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://turkish-health-network-uk-topaz.vercel.app" aria-label="Copy link to Turkish Health Network UK" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="turkish community">
+              <a class="project-link" href="https://turkish-network-survey.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/turkish-network-survey.jpg" alt="LocalRater survey screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">LocalRater</h3>
+
+                <p class="project-category">Turkish community</p>
+
+                <p class="project-text">An annual, community-run “Life in the UK” survey for Turkish people living in
+                  Britain, with public results.</p>
+
+              </a>
+              <div class="project-url">
+                <a href="https://turkish-network-survey.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open LocalRater">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>turkish-network-survey.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://turkish-network-survey.vercel.app" aria-label="Copy link to LocalRater" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-group  active" data-filter-item data-category="social tools">
@@ -748,7 +796,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="social tools">
-              <a href="https://www.pingather.com" target="_blank" rel="noopener">
+              <a class="project-link" href="https://www.pingather.com" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -766,10 +814,19 @@
                   fill themselves in, or lists imported from a paste or screenshot.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://www.pingather.com" class="project-url-link" target="_blank" rel="noopener" title="Open PinGather">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>pingather.com</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://www.pingather.com" aria-label="Copy link to PinGather" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="social tools">
-              <a href="https://kebab-awards-map.vercel.app" target="_blank" rel="noopener">
+              <a class="project-link" href="https://kebab-awards-map.vercel.app" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -787,31 +844,19 @@
                   by category.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://kebab-awards-map.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open Kebab Awards Map">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>kebab-awards-map.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://kebab-awards-map.vercel.app" aria-label="Copy link to Kebab Awards Map" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="social tools">
-              <a href="https://turkish-network-survey.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/turkish-network-survey.jpg" alt="LocalRater survey screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">LocalRater</h3>
-
-                <p class="project-category">Social tools</p>
-
-                <p class="project-text">An annual, community-run “Life in the UK” survey for Turkish people living in
-                  Britain, with public results.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="social tools">
-              <a href="https://bucketboard.vercel.app" target="_blank" rel="noopener">
+              <a class="project-link" href="https://bucketboard.vercel.app" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -829,10 +874,19 @@
                   and in independent local shops.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://bucketboard.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open BucketBoard">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>bucketboard.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://bucketboard.vercel.app" aria-label="Copy link to BucketBoard" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="social tools">
-              <a href="https://awesome-anxiety.vercel.app" target="_blank" rel="noopener">
+              <a class="project-link" href="https://awesome-anxiety.vercel.app" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -850,6 +904,15 @@
                   and places to find support.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://awesome-anxiety.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open Awesome Anxiety">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>awesome-anxiety.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://awesome-anxiety.vercel.app" aria-label="Copy link to Awesome Anxiety" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-group  active" data-filter-item data-category="table tennis">
@@ -858,49 +921,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="table tennis">
-              <a href="https://hrc-table-tennis.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/hrc-table-tennis.jpg" alt="Hertford and District Table Tennis League website screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Hertford &amp; District TT League</h3>
-
-                <p class="project-category">Table tennis</p>
-
-                <p class="project-text">Website for a league running since 1936 — fixtures, tables, clubs and notices,
-                  with accessible text-size and dark modes.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="table tennis">
-              <a href="https://table-tennis-bench.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/table-tennis-bench.jpg" alt="TT Bench screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">TT Bench</h3>
-
-                <p class="project-category">Table tennis</p>
-
-                <p class="project-text">Search, filter and compare 90+ rubbers, blades, bats, tables, balls and robots
-                  side by side on a normalised 10-point scale.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="table tennis">
-              <a href="https://table-tennis-camps.vercel.app" target="_blank" rel="noopener">
+              <a class="project-link" href="https://table-tennis-camps.vercel.app" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -918,31 +939,19 @@
                   high-performance and residential.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://table-tennis-camps.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open Table Tennis Camps">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>table-tennis-camps.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://table-tennis-camps.vercel.app" aria-label="Copy link to Table Tennis Camps" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="table tennis">
-              <a href="https://hrc-league.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/hrc-league.jpg" alt="HRC League Calendar screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">HRC League Calendar</h3>
-
-                <p class="project-category">Table tennis</p>
-
-                <p class="project-text">Pick your team and name to get your personal fixture list for the season —
-                  save to calendar or print.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="table tennis">
-              <a href="https://awesome-table-tennis.vercel.app" target="_blank" rel="noopener">
+              <a class="project-link" href="https://awesome-table-tennis.vercel.app" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -960,10 +969,109 @@
                   reviews, communities and places to play.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://awesome-table-tennis.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open Awesome Table Tennis">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>awesome-table-tennis.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://awesome-table-tennis.vercel.app" aria-label="Copy link to Awesome Table Tennis" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="table tennis">
-              <a href="https://hrc-summer-schedule.vercel.app" target="_blank" rel="noopener">
+              <a class="project-link" href="https://hrc-table-tennis.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/hrc-table-tennis.jpg" alt="Hertford and District Table Tennis League website screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hertford &amp; District TT League</h3>
+
+                <p class="project-category">Table tennis</p>
+
+                <p class="project-text">Website for a league running since 1936 — fixtures, tables, clubs and notices,
+                  with accessible text-size and dark modes.</p>
+
+              </a>
+              <div class="project-url">
+                <a href="https://hrc-table-tennis.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open Hertford &amp; District TT League">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>hrc-table-tennis.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://hrc-table-tennis.vercel.app" aria-label="Copy link to Hertford &amp; District TT League" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="table tennis">
+              <a class="project-link" href="https://table-tennis-bench.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/table-tennis-bench.jpg" alt="TT Bench screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">TT Bench</h3>
+
+                <p class="project-category">Table tennis</p>
+
+                <p class="project-text">Search, filter and compare 90+ rubbers, blades, bats, tables, balls and robots
+                  side by side on a normalised 10-point scale.</p>
+
+              </a>
+              <div class="project-url">
+                <a href="https://table-tennis-bench.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open TT Bench">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>table-tennis-bench.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://table-tennis-bench.vercel.app" aria-label="Copy link to TT Bench" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="table tennis">
+              <a class="project-link" href="https://hrc-league.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/hrc-league.jpg" alt="HRC League Calendar screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">HRC League Calendar</h3>
+
+                <p class="project-category">Table tennis</p>
+
+                <p class="project-text">Pick your team and name to get your personal fixture list for the season —
+                  save to calendar or print.</p>
+
+              </a>
+              <div class="project-url">
+                <a href="https://hrc-league.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open HRC League Calendar">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>hrc-league.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://hrc-league.vercel.app" aria-label="Copy link to HRC League Calendar" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="table tennis">
+              <a class="project-link" href="https://hrc-summer-schedule.vercel.app" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -981,10 +1089,19 @@
                   fixtures are yours.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://hrc-summer-schedule.vercel.app" class="project-url-link" target="_blank" rel="noopener" title="Open Summer League Calendar">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>hrc-summer-schedule.vercel.app</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://hrc-summer-schedule.vercel.app" aria-label="Copy link to Summer League Calendar" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="table tennis">
-              <a href="https://maps.app.goo.gl/BXR7gQ7UMRn5Qdc67" target="_blank" rel="noopener">
+              <a class="project-link" href="https://maps.app.goo.gl/BXR7gQ7UMRn5Qdc67" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1001,6 +1118,15 @@
                 <p class="project-text">36 table-tennis clubs, centres and ping-pong bars around the UK, mostly in and around London, on a shared Google Maps list.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://maps.app.goo.gl/BXR7gQ7UMRn5Qdc67" class="project-url-link" target="_blank" rel="noopener" title="Open TT Venues">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>maps.app.goo.gl/BXR7gQ7UMRn5Qdc67</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://maps.app.goo.gl/BXR7gQ7UMRn5Qdc67" aria-label="Copy link to TT Venues" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-group  active" data-filter-item data-category="community maps">
@@ -1009,7 +1135,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="community maps">
-              <a href="https://maps.app.goo.gl/RyagFgXMqPsjFhJN7" target="_blank" rel="noopener">
+              <a class="project-link" href="https://maps.app.goo.gl/RyagFgXMqPsjFhJN7" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1026,10 +1152,19 @@
                 <p class="project-text">535 places recommended by our WhatsApp group of food lovers living in the UK — restaurants, cafés and street food.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://maps.app.goo.gl/RyagFgXMqPsjFhJN7" class="project-url-link" target="_blank" rel="noopener" title="Open UK'de yaşayan oburların favori mekanları">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>maps.app.goo.gl/RyagFgXMqPsjFhJN7</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://maps.app.goo.gl/RyagFgXMqPsjFhJN7" aria-label="Copy link to UK'de yaşayan oburların favori mekanları" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="community maps">
-              <a href="https://maps.app.goo.gl/4Mj8xaYNxqjCC5CN9" target="_blank" rel="noopener">
+              <a class="project-link" href="https://maps.app.goo.gl/4Mj8xaYNxqjCC5CN9" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1046,10 +1181,19 @@
                 <p class="project-text">84 Turkish supermarkets, food centres and greengrocers across the UK, all on one map.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://maps.app.goo.gl/4Mj8xaYNxqjCC5CN9" class="project-url-link" target="_blank" rel="noopener" title="Open UK Turkish Supermarkets">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>maps.app.goo.gl/4Mj8xaYNxqjCC5CN9</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://maps.app.goo.gl/4Mj8xaYNxqjCC5CN9" aria-label="Copy link to UK Turkish Supermarkets" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="community maps">
-              <a href="https://maps.app.goo.gl/2ds6exaBGefK3oBk6" target="_blank" rel="noopener">
+              <a class="project-link" href="https://maps.app.goo.gl/2ds6exaBGefK3oBk6" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1066,10 +1210,19 @@
                 <p class="project-text">37 places for baklava, künefe and Turkish desserts around the UK.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://maps.app.goo.gl/2ds6exaBGefK3oBk6" class="project-url-link" target="_blank" rel="noopener" title="Open UK Baklava &amp; Tatlı">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>maps.app.goo.gl/2ds6exaBGefK3oBk6</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://maps.app.goo.gl/2ds6exaBGefK3oBk6" aria-label="Copy link to UK Baklava &amp; Tatlı" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="community maps">
-              <a href="https://maps.app.goo.gl/o8aZ6p7sxSj6UcdbA" target="_blank" rel="noopener">
+              <a class="project-link" href="https://maps.app.goo.gl/o8aZ6p7sxSj6UcdbA" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1086,10 +1239,19 @@
                 <p class="project-text">14 hand-picked spots for proper stone-oven lahmacun and pide.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://maps.app.goo.gl/o8aZ6p7sxSj6UcdbA" class="project-url-link" target="_blank" rel="noopener" title="Open UK Lahmacun &amp; Pide">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>maps.app.goo.gl/o8aZ6p7sxSj6UcdbA</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://maps.app.goo.gl/o8aZ6p7sxSj6UcdbA" aria-label="Copy link to UK Lahmacun &amp; Pide" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="community maps">
-              <a href="https://maps.app.goo.gl/aryAd2bTEjGj6eKY7" target="_blank" rel="noopener">
+              <a class="project-link" href="https://maps.app.goo.gl/aryAd2bTEjGj6eKY7" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1106,6 +1268,15 @@
                 <p class="project-text">122 stately homes, castles, parks and National Trust gardens across the UK, for weekend days out.</p>
 
               </a>
+              <div class="project-url">
+                <a href="https://maps.app.goo.gl/aryAd2bTEjGj6eKY7" class="project-url-link" target="_blank" rel="noopener" title="Open UK Houses &amp; Gardens">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                  <span>maps.app.goo.gl/aryAd2bTEjGj6eKY7</span>
+                </a>
+                <button type="button" class="project-url-copy" data-copy-url="https://maps.app.goo.gl/aryAd2bTEjGj6eKY7" aria-label="Copy link to UK Houses &amp; Gardens" title="Copy link">
+                  <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
             </li>
 
           </ul>
@@ -1127,13 +1298,6 @@
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://maps.google.com/maps?q=Hertford%2C%20UK&z=9&output=embed" width="400" height="300"
-              loading="lazy" title="Map of Hertfordshire and London"></iframe>
-          </figure>
-        </section>
 
         <section class="contact-options">
 
@@ -1198,7 +1362,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js?v=6"></script>
+  <script src="./assets/js/script.js?v=9"></script>
 
   <!--
     - ionicon link
