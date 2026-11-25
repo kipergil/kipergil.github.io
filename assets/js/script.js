@@ -134,6 +134,21 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// send the message through the visitor's email client (static site, no backend)
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  if (!form.checkValidity()) return;
+
+  const name = form.elements.fullname.value.trim();
+  const email = form.elements.email.value.trim();
+  const message = form.elements.message.value.trim();
+
+  const subject = encodeURIComponent("Website enquiry from " + name);
+  const body = encodeURIComponent(message + "\n\n— " + name + " (" + email + ")");
+
+  window.location.href = "mailto:kipergil@gmail.com?subject=" + subject + "&body=" + body;
+});
+
 
 
 // page navigation variables
