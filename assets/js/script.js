@@ -107,3 +107,44 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 // open the tab named in the URL hash, e.g. kipergil.github.io/#tools
 if (location.hash) showPage(location.hash.slice(1).toLowerCase());
+
+
+
+// copy tool links to the clipboard
+const copyText = function (text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(text);
+  }
+  return new Promise(function (resolve, reject) {
+    const area = document.createElement("textarea");
+    area.value = text;
+    area.setAttribute("readonly", "");
+    area.style.position = "fixed";
+    area.style.opacity = "0";
+    document.body.appendChild(area);
+    area.select();
+    const ok = document.execCommand("copy");
+    document.body.removeChild(area);
+    ok ? resolve() : reject(new Error("copy failed"));
+  });
+}
+
+const copyButtons = document.querySelectorAll("[data-copy-url]");
+
+for (let i = 0; i < copyButtons.length; i++) {
+  copyButtons[i].addEventListener("click", function () {
+    const btn = this;
+    const icon = btn.querySelector("ion-icon");
+    copyText(btn.dataset.copyUrl).then(function () {
+      btn.classList.add("copied");
+      if (icon) icon.setAttribute("name", "checkmark-outline");
+      clearTimeout(btn.copyTimer);
+      btn.copyTimer = setTimeout(function () {
+        btn.classList.remove("copied");
+        if (icon) icon.setAttribute("name", "copy-outline");
+      }, 1600);
+    }).catch(function () {
+      window.prompt("Copy this link:", btn.dataset.copyUrl);
+    });
+  });
+}

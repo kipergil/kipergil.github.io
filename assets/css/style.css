@@ -1981,20 +1981,106 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-bottom: 25px;
 }
 
-.project-item > a {
-  height: 100%;
+.project-item.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item {
   background: var(--eerie-black-1);
   border: 1px solid var(--jet);
   border-radius: 16px;
-  padding-bottom: 16px;
   overflow: hidden;
   transition: var(--transition-1);
 }
 
-.project-item > a:hover,
-.project-item > a:focus-visible {
+.project-item:hover,
+.project-item:focus-within {
   border-color: hsla(45, 100%, 72%, 0.45);
   box-shadow: var(--shadow-2);
+}
+
+.project-item > .project-link {
+  flex-grow: 1;
+  padding-bottom: 16px;
+}
+
+/* url footer: click to open, button to copy */
+
+.project-url {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 10px;
+  padding: 10px 6px 12px;
+  border-top: 1px solid var(--jet);
+}
+
+.project-url-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-grow: 1;
+  min-width: 0;
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  transition: var(--transition-1);
+}
+
+.project-url-link span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.project-url-link ion-icon { flex-shrink: 0; font-size: 13px; }
+
+.project-url-link:hover,
+.project-url-link:focus-visible { color: var(--orange-yellow-crayola); }
+
+.project-url-copy {
+  position: relative;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  color: var(--light-gray-70);
+  font-size: 15px;
+  border-radius: 8px;
+  transition: var(--transition-1);
+}
+
+.project-url-copy:hover,
+.project-url-copy:focus-visible {
+  color: var(--orange-yellow-crayola);
+  background: var(--onyx);
+}
+
+.project-url-copy.copied { color: var(--orange-yellow-crayola); }
+
+.project-url-copy::after {
+  content: "Copied";
+  position: absolute;
+  bottom: calc(100% + 6px);
+  right: 0;
+  background: var(--onyx);
+  color: var(--white-2);
+  font-size: var(--fs-8);
+  padding: 3px 8px;
+  border: 1px solid var(--jet);
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition: var(--transition-1);
+}
+
+.project-url-copy.copied::after {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-img,
