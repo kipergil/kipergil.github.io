@@ -22,7 +22,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=3">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
 
   <!--
     - google font link
@@ -624,8 +624,8 @@
         </header>
 
         <p class="tools-intro">
-          Side projects I design, build and ship on <strong>Vercel</strong> — mostly for my table-tennis league and
-          the UK Turkish community, plus a few AI and productivity experiments.
+          Side projects I design, build and ship on <strong>Vercel</strong> for the UK Turkish community, my
+          table-tennis league and friends, plus the community Google Maps lists I curate.
           Source on <a href="https://github.com/kipergil" target="_blank" rel="noopener">GitHub</a>.
         </p>
 
@@ -638,11 +638,19 @@
             </li>
 
             <li class="filter-item">
+              <button data-filter-btn>Turkish community</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Social tools</button>
+            </li>
+
+            <li class="filter-item">
               <button data-filter-btn>Table tennis</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Community</button>
+              <button data-filter-btn>Community maps</button>
             </li>
 
             <li class="filter-item">
@@ -670,11 +678,19 @@
               </li>
 
               <li class="select-item">
+                <button data-select-item>Turkish community</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Social tools</button>
+              </li>
+
+              <li class="select-item">
                 <button data-select-item>Table tennis</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Community</button>
+                <button data-select-item>Community maps</button>
               </li>
 
               <li class="select-item">
@@ -687,7 +703,59 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="community">
+            <li class="project-group  active" data-filter-item data-category="turkish community">
+              <h3 class="h3 project-group-title">Turkish community</h3>
+              <p class="project-group-text">Tools for Turkish people living in the UK.</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="turkish community">
+              <a href="https://turkish-events-uk.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/turkish-events-uk.jpg" alt="Turkish Events UK screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Turkish Events UK</h3>
+
+                <p class="project-category">Turkish community</p>
+
+                <p class="project-text">A daily feed of Turkish events across the UK — concerts, talks, film, sport and
+                  community gatherings, refreshed every morning.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="turkish community">
+              <a href="https://turkish-health-network-uk-topaz.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/turkish-health-network-uk.jpg" alt="Turkish Health Network UK screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Turkish Health Network UK</h3>
+
+                <p class="project-category">Turkish community</p>
+
+                <p class="project-text">Directory and map of Turkish-speaking doctors, dentists, therapists, clinics and
+                  pharmacies, searchable by NHS / private and location.</p>
+
+              </a>
+            </li>
+
+            <li class="project-group  active" data-filter-item data-category="social tools">
+              <h3 class="h3 project-group-title">Social tools</h3>
+              <p class="project-group-text">Community-driven apps for sharing, rating and recommending.</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="social tools">
               <a href="https://www.pingather.com" target="_blank" rel="noopener">
 
                 <figure class="project-img">
@@ -700,12 +768,101 @@
 
                 <h3 class="project-title">PinGather</h3>
 
-                <p class="project-category">Community</p>
+                <p class="project-category">Social tools</p>
 
                 <p class="project-text">Build shared collections with your community — places on a map, links that
                   fill themselves in, or lists imported from a paste or screenshot.</p>
 
               </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="social tools">
+              <a href="https://kebab-awards-map.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/kebab-awards-map.jpg" alt="Kebab Awards Map screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Kebab Awards Map</h3>
+
+                <p class="project-category">Social tools</p>
+
+                <p class="project-text">British Kebab Awards semi-finalists plotted on an OpenStreetMap map, filterable
+                  by category.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="social tools">
+              <a href="https://turkish-network-survey.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/turkish-network-survey.jpg" alt="LocalRater survey screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">LocalRater</h3>
+
+                <p class="project-category">Social tools</p>
+
+                <p class="project-text">An annual, community-run “Life in the UK” survey for Turkish people living in
+                  Britain, with public results.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="social tools">
+              <a href="https://bucketboard.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/bucketboard.jpg" alt="BucketBoard screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">BucketBoard</h3>
+
+                <p class="project-category">Social tools</p>
+
+                <p class="project-text">Community-voted favourite supermarket products — and where to buy them online
+                  and in independent local shops.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="social tools">
+              <a href="https://awesome-anxiety.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/awesome-anxiety.jpg" alt="Awesome Anxiety screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Awesome Anxiety</h3>
+
+                <p class="project-category">Social tools</p>
+
+                <p class="project-text">A curated directory of trusted anxiety content, researchers, self-help tools
+                  and places to find support.</p>
+
+              </a>
+            </li>
+
+            <li class="project-group  active" data-filter-item data-category="table tennis">
+              <h3 class="h3 project-group-title">Table tennis</h3>
+              <p class="project-group-text">Built for my league, my club mates and the wider table-tennis community.</p>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="table tennis">
@@ -750,48 +907,6 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="community">
-              <a href="https://turkish-events-uk.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/turkish-events-uk.jpg" alt="Turkish Events UK screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Turkish Events UK</h3>
-
-                <p class="project-category">Community</p>
-
-                <p class="project-text">A daily feed of Turkish events across the UK — concerts, talks, film, sport and
-                  community gatherings, refreshed every morning.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="community">
-              <a href="https://turkish-health-network-uk-topaz.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/turkish-health-network-uk.jpg" alt="Turkish Health Network UK screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Turkish Health Network UK</h3>
-
-                <p class="project-category">Community</p>
-
-                <p class="project-text">Directory and map of Turkish-speaking doctors, dentists, therapists, clinics and
-                  pharmacies, searchable by NHS / private and location.</p>
-
-              </a>
-            </li>
-
             <li class="project-item  active" data-filter-item data-category="table tennis">
               <a href="https://table-tennis-camps.vercel.app" target="_blank" rel="noopener">
 
@@ -809,27 +924,6 @@
 
                 <p class="project-text">A weekly-refreshed feed of table-tennis camps worldwide — holiday, adult,
                   high-performance and residential.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ai &amp; productivity">
-              <a href="https://ai-usecases.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/ai-usecases.jpg" alt="AI Use Cases by Role screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">AI Use Cases by Role</h3>
-
-                <p class="project-category">AI &amp; productivity</p>
-
-                <p class="project-text">38 practical AI use cases with copy-paste prompts for architects, backend,
-                  frontend, product and UI/UX — built for team upskilling.</p>
 
               </a>
             </li>
@@ -855,27 +949,6 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="community">
-              <a href="https://bucketboard.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/bucketboard.jpg" alt="BucketBoard screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">BucketBoard</h3>
-
-                <p class="project-category">Community</p>
-
-                <p class="project-text">Community-voted favourite supermarket products — and where to buy them online
-                  and in independent local shops.</p>
-
-              </a>
-            </li>
-
             <li class="project-item  active" data-filter-item data-category="table tennis">
               <a href="https://awesome-table-tennis.vercel.app" target="_blank" rel="noopener">
 
@@ -893,69 +966,6 @@
 
                 <p class="project-text">A curated directory of table-tennis creators, pro players, courses, gear
                   reviews, communities and places to play.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="community">
-              <a href="https://kebab-awards-map.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/kebab-awards-map.jpg" alt="Kebab Awards Map screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Kebab Awards Map</h3>
-
-                <p class="project-category">Community</p>
-
-                <p class="project-text">British Kebab Awards semi-finalists plotted on an OpenStreetMap map, filterable
-                  by category.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ai &amp; productivity">
-              <a href="https://premarket-calculator.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/premarket-calculator.jpg" alt="Premarket Gain Calculator screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Premarket Gain Calculator</h3>
-
-                <p class="project-category">AI &amp; productivity</p>
-
-                <p class="project-text">Upload a brokerage screenshot and Gemini Vision reads your positions, then
-                  premarket prices show your gain before the open.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="community">
-              <a href="https://turkish-network-survey.vercel.app" target="_blank" rel="noopener">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/tools/turkish-network-survey.jpg" alt="LocalRater survey screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">LocalRater</h3>
-
-                <p class="project-category">Community</p>
-
-                <p class="project-text">An annual, community-run “Life in the UK” survey for Turkish people living in
-                  Britain, with public results.</p>
 
               </a>
             </li>
@@ -981,23 +991,134 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="community">
-              <a href="https://awesome-anxiety.vercel.app" target="_blank" rel="noopener">
+            <li class="project-group  active" data-filter-item data-category="community maps">
+              <h3 class="h3 project-group-title">Community maps</h3>
+              <p class="project-group-text">Shared Google Maps lists I curate with the community.</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="community maps">
+              <a href="https://maps.app.goo.gl/RyagFgXMqPsjFhJN7" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/map-obur.jpg" alt="UK'de yaşayan oburların favori mekanları — Google Maps list" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">UK'de yaşayan oburların favori mekanları</h3>
+
+                <p class="project-category">Community maps</p>
+
+                <p class="project-text">535 places recommended by our WhatsApp group of food lovers living in the UK — restaurants, cafés and street food.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="community maps">
+              <a href="https://maps.app.goo.gl/4Mj8xaYNxqjCC5CN9" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/map-market.jpg" alt="UK Turkish Supermarkets — Google Maps list" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">UK Turkish Supermarkets</h3>
+
+                <p class="project-category">Community maps</p>
+
+                <p class="project-text">84 Turkish supermarkets, food centres and greengrocers across the UK, all on one map.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="community maps">
+              <a href="https://maps.app.goo.gl/2ds6exaBGefK3oBk6" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/map-baklava.jpg" alt="UK Baklava &amp; Tatlı — Google Maps list" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">UK Baklava &amp; Tatlı</h3>
+
+                <p class="project-category">Community maps</p>
+
+                <p class="project-text">37 places for baklava, künefe and Turkish desserts around the UK.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="community maps">
+              <a href="https://maps.app.goo.gl/o8aZ6p7sxSj6UcdbA" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/map-lahmacun.jpg" alt="UK Lahmacun &amp; Pide — Google Maps list" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">UK Lahmacun &amp; Pide</h3>
+
+                <p class="project-category">Community maps</p>
+
+                <p class="project-text">14 hand-picked spots for proper stone-oven lahmacun and pide.</p>
+
+              </a>
+            </li>
+
+            <li class="project-group  active" data-filter-item data-category="ai &amp; productivity">
+              <h3 class="h3 project-group-title">AI &amp; productivity</h3>
+              <p class="project-group-text">Experiments with AI for work and everyday tasks.</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai &amp; productivity">
+              <a href="https://ai-usecases.vercel.app" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/tools/awesome-anxiety.jpg" alt="Awesome Anxiety screenshot" loading="lazy">
+                  <img src="./assets/images/tools/ai-usecases.jpg" alt="AI Use Cases by Role screenshot" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Awesome Anxiety</h3>
+                <h3 class="project-title">AI Use Cases by Role</h3>
 
-                <p class="project-category">Community</p>
+                <p class="project-category">AI &amp; productivity</p>
 
-                <p class="project-text">A curated directory of trusted anxiety content, researchers, self-help tools
-                  and places to find support.</p>
+                <p class="project-text">38 practical AI use cases with copy-paste prompts for architects, backend,
+                  frontend, product and UI/UX — built for team upskilling.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai &amp; productivity">
+              <a href="https://premarket-calculator.vercel.app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tools/premarket-calculator.jpg" alt="Premarket Gain Calculator screenshot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Premarket Gain Calculator</h3>
+
+                <p class="project-category">AI &amp; productivity</p>
+
+                <p class="project-text">Upload a brokerage screenshot and Gemini Vision reads your positions, then
+                  premarket prices show your gain before the open.</p>
 
               </a>
             </li>
@@ -1092,7 +1213,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js?v=3"></script>
+  <script src="./assets/js/script.js?v=4"></script>
 
   <!--
     - ionicon link

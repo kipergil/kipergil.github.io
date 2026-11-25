@@ -2109,3 +2109,39 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 .project-item > a:hover img { transform: scale(1.04); }
+
+/* tools group headings */
+
+.project-group { display: none; grid-column: 1 / -1; }
+
+.project-group.active { display: block; }
+
+.project-group:not(:first-child) { margin-top: 15px; }
+
+.project-group-title {
+  position: relative;
+  color: var(--white-2);
+  padding-left: 14px;
+  margin-bottom: 4px;
+}
+
+.project-group-title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 70%;
+  background: var(--text-gradient-yellow);
+  border-radius: 4px;
+}
+
+.project-group-text {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  padding-left: 14px;
+}
+
+.filter-list { flex-wrap: wrap; row-gap: 10px; }
