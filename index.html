@@ -22,7 +22,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v=3">
 
   <!--
     - google font link
@@ -315,187 +315,6 @@
 
         </section>
 
-
-        <!--
-          - highlights
-        -->
-
-        <section class="highlights">
-
-          <h3 class="h3 highlights-title">Highlights</h3>
-
-          <ul class="highlights-list">
-
-            <li class="highlight-item">
-              <data class="highlight-value" value="50000">£50K/mo</data>
-              <p class="highlight-label">Azure cost saved through re-architecture and autoscaling</p>
-            </li>
-
-            <li class="highlight-item">
-              <data class="highlight-value" value="200000000">200M</data>
-              <p class="highlight-label">Events ingested per day, plus 20M+ requests, with no event loss</p>
-            </li>
-
-            <li class="highlight-item">
-              <data class="highlight-value" value="1">1 month</data>
-              <p class="highlight-label">To ship an MVP estimated at three, using AI-assisted development</p>
-            </li>
-
-            <li class="highlight-item">
-              <data class="highlight-value" value="95">40% → 95%</data>
-              <p class="highlight-label">Timesheet compliance after the kiosk app I built at BBH</p>
-            </li>
-
-            <li class="highlight-item">
-              <data class="highlight-value" value="6">6</data>
-              <p class="highlight-label">Microsoft Azure certifications, two at Expert level</p>
-            </li>
-
-            <li class="highlight-item">
-              <data class="highlight-value" value="20">20+ yrs</data>
-              <p class="highlight-label">Designing, building and leading .NET and web platforms</p>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-yk.svg" alt="Yomi Kastro" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Yomi Kastro</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Mustafa is an extraordinary tech lead and a software developer with constant desire to learn. It
-                    is a great experience to build cutting-edge software products with Mustafa and create an impact.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn aria-label="Close">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-yk.svg" alt="Yomi Kastro" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Yomi Kastro</h4>
-
-              <div data-modal-text>
-                <p>
-                  Mustafa is an extraordinary tech lead and a software developer with constant desire to learn.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Companies &amp; clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <div class="client-card">
-                <p class="client-name">WPP</p>
-                <p class="client-years">2025 – now</p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div class="client-card">
-                <p class="client-name">T&amp;P</p>
-                <p class="client-years">2024 – 2025</p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div class="client-card">
-                <p class="client-name">Cognizant</p>
-                <p class="client-years">2021 – 2024</p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div class="client-card">
-                <p class="client-name">Whitbread</p>
-                <p class="client-years">Client · 2021 – 2024</p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div class="client-card">
-                <p class="client-name">Publicis Groupe</p>
-                <p class="client-years">2019 – 2021</p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div class="client-card">
-                <p class="client-name">BBH London</p>
-                <p class="client-years">2017 – 2019</p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div class="client-card">
-                <p class="client-name">Inveon</p>
-                <p class="client-years">2008 – 2017</p>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
@@ -873,7 +692,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/pingather.jpg" alt="PinGather screenshot" loading="lazy">
@@ -894,7 +713,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/hrc-table-tennis.jpg" alt="Hertford and District Table Tennis League website screenshot" loading="lazy">
@@ -915,7 +734,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/table-tennis-bench.jpg" alt="TT Bench screenshot" loading="lazy">
@@ -936,7 +755,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/turkish-events-uk.jpg" alt="Turkish Events UK screenshot" loading="lazy">
@@ -957,7 +776,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/turkish-health-network-uk.jpg" alt="Turkish Health Network UK screenshot" loading="lazy">
@@ -978,7 +797,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/table-tennis-camps.jpg" alt="Table Tennis Camps screenshot" loading="lazy">
@@ -999,7 +818,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/ai-usecases.jpg" alt="AI Use Cases by Role screenshot" loading="lazy">
@@ -1020,7 +839,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/hrc-league.jpg" alt="HRC League Calendar screenshot" loading="lazy">
@@ -1041,7 +860,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/bucketboard.jpg" alt="BucketBoard screenshot" loading="lazy">
@@ -1062,7 +881,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/awesome-table-tennis.jpg" alt="Awesome Table Tennis screenshot" loading="lazy">
@@ -1083,7 +902,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/kebab-awards-map.jpg" alt="Kebab Awards Map screenshot" loading="lazy">
@@ -1104,7 +923,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/premarket-calculator.jpg" alt="Premarket Gain Calculator screenshot" loading="lazy">
@@ -1125,7 +944,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/turkish-network-survey.jpg" alt="LocalRater survey screenshot" loading="lazy">
@@ -1146,7 +965,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/hrc-summer-schedule.jpg" alt="Summer League match calendar screenshot" loading="lazy">
@@ -1167,7 +986,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/tools/awesome-anxiety.jpg" alt="Awesome Anxiety screenshot" loading="lazy">
@@ -1210,31 +1029,52 @@
           </figure>
         </section>
 
-        <section class="contact-form">
+        <section class="contact-options">
 
           <h3 class="h3 form-title">Get in touch</h3>
 
           <p class="contact-note">
-            Open to senior architecture and technical-lead work. Send a message below — it opens in your email app —
-            or email <a href="mailto:kipergil@gmail.com">kipergil@gmail.com</a> directly.
+            Open to senior architecture and technical-lead work. The quickest way to reach me is email or WhatsApp.
           </p>
 
-          <form action="#" class="form" data-form>
+          <ul class="contact-actions">
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+            <li>
+              <a href="mailto:kipergil@gmail.com?subject=Hello%20Mustafa" class="contact-action">
+                <span class="contact-action-icon"><ion-icon name="mail-outline" aria-hidden="true"></ion-icon></span>
+                <span class="contact-action-text">
+                  <span class="contact-action-title">Send an email</span>
+                  <span class="contact-action-sub">kipergil@gmail.com</span>
+                </span>
+                <ion-icon class="contact-action-arrow" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+            <li>
+              <a href="https://wa.me/447776515869?text=Hi%20Mustafa%2C%20" class="contact-action" target="_blank"
+                rel="noopener">
+                <span class="contact-action-icon"><ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon></span>
+                <span class="contact-action-text">
+                  <span class="contact-action-title">Message on WhatsApp</span>
+                  <span class="contact-action-sub">+44 7776 515869</span>
+                </span>
+                <ion-icon class="contact-action-arrow" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <li>
+              <a href="https://www.linkedin.com/in/mustafakipergil" class="contact-action" target="_blank"
+                rel="noopener">
+                <span class="contact-action-icon"><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon></span>
+                <span class="contact-action-text">
+                  <span class="contact-action-title">Connect on LinkedIn</span>
+                  <span class="contact-action-sub">in/mustafakipergil</span>
+                </span>
+                <ion-icon class="contact-action-arrow" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
+          </ul>
 
         </section>
 
@@ -1252,7 +1092,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js?v=3"></script>
 
   <!--
     - ionicon link
